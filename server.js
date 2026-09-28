@@ -30,7 +30,7 @@ app.use((err, req, res, next) => {
     res.status(400).json({ 'error': err.message })
 })
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
     console.log(`server is running on port ${PORT}`)
 })
