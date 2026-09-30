@@ -18,6 +18,9 @@ dns.setServers([
 const dbconnection = require('./confic/db-connection');
 dbconnection();
 
+//cors-policy
+const cors = require('cors');
+app.use(cors());
 
 //route api
 const routerOrders = require('./route-api/orders-route');
